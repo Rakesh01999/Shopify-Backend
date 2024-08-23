@@ -30,6 +30,7 @@ async function run() {
 
         const productsCollection = client.db("Shopify").collection("shopifyProducts");
         const userCollection = client.db("Shopify").collection("shopifyCustomers");
+        const ordersCollection = client.db("Shopify").collection("shopifyOrders");
 
 
         app.get('/products', async (req, res) => {
